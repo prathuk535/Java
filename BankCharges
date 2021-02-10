@@ -1,0 +1,32 @@
+package com.learning.localsingtext;
+import java.util.Scanner;
+public class LocaLsingText {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double a,b;
+		Scanner sn=new Scanner(System.in);
+		System.out.println("enter 1 if u want to deposit");
+		System.out.println("enter 2 if u want to withdrawl");
+		int n=sn.nextInt();
+		if(n==1)
+		{	Scanner sd=new Scanner(System.in);
+			System.out.println("enter amount to deposit ");
+			int d=sd.nextInt();
+			a=(d-(0.2*d));
+			System.out.println("amount deposited by depositor "+a);
+			b=(d-(0.4*d));
+			System.out.println("amount deposited by withdrawal "+b);
+		}
+		else
+		{	Scanner sw=new Scanner(System.in);
+			System.out.println("enter amount to withdrawl ");
+			int w=sw.nextInt();
+			a=(w-(0.5*w));
+			System.out.println("amount withdrawl by depositor "+a);
+			b=(w-(0.25*w));
+			System.out.println("amount withdrawl by withdrawal "+b);
+		}
+
+	}
+}
